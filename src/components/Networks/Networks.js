@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import NetworksCard from "./NetworksCards";
 // import Particle from "../Particle";
-// import blockchain from "../../Assets/Networks/blockchain-tech.png"
 import entangle from "../../Assets/Networks/entangle.png"
 import artela from "../../Assets/Networks/artela.png"
 import pryzm from "../../Assets/Networks/pryzm.png"

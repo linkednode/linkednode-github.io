@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
 import { GiChaingun } from "react-icons/gi";
 import { FaExternalLinkAlt } from "react-icons/fa";
 

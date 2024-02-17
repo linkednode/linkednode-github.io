@@ -1,13 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import Particle from "../Particle";
-// import Github from "./Github";
-// import Techstack from "./OfferCards";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about-linkednode.png";
-// import Toolstack from "./Toolstack";
 import OfferGroups from "./OfferCards";
-// import chatify from "../../Assets/Networks/chatify.png";
 import { GiPadlock } from "react-icons/gi";
 import { MdMonitor } from "react-icons/md";
 import { IoDocument, IoShieldCheckmarkSharp } from "react-icons/io5";
