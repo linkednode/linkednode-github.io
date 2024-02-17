@@ -21,8 +21,8 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                Call me
-                <strong className="main-name"> linkednode</strong>
+                <strong className="main-name">linkednode </strong>
+                provide
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>

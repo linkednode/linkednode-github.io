@@ -28,7 +28,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              About Us <strong className="blue">?</strong>
+              About <strong className="blue">?</strong>
             </h1>
             <Aboutcard />
           </Col>
