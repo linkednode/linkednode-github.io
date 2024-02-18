@@ -6,9 +6,9 @@ import Card from 'react-bootstrap/Card';
 
 function DocGuide() {
   return (
+    <section>
     <Container fluid className="resume-section" id="guide">
-      {/* <Particle /> */}
-      <Container>
+      <Container className="home-content">
           <Card className="quote-card-view">
             <Card.Header>Docs guide</Card.Header>
             <Card.Body>
@@ -22,6 +22,7 @@ function DocGuide() {
           </Card>
       </Container>
     </Container>
+    </section>
   );
 }
 

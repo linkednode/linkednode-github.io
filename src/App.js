@@ -6,7 +6,8 @@ import About from "./components/About/About";
 import Networks from "./components/Networks/Networks";
 import Footer from "./components/Footer";
 import DocGuide from "./components/Guide/Guide";
-import NotFound from "./components/NotFoundPage/NotFound";
+import ErrorPage from "./components/Extras/ErrorPage";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -36,16 +37,65 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/networks" element={<Networks />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/guide" element={<DocGuide />} />
-          {/* <Route path='*' element={<NotFound />}/> */}
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/" element={<HomeWithLayout />} />
+          <Route path="/networks" element={<NetworksWithLayout />} />
+          <Route path="/about" element={<AboutWithLayout />} />
+          <Route path="/guide" element={<DocGuideWithLayout />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
+  );
+}
+
+function EmptyLayout() {
+  return (
+    <>
+      <Navbar />
+      <ScrollToTop />
+      <Footer />
+    </>
+  );
+}
+
+function HomeWithLayout() {
+  return (
+    <>
+      {/* <Navbar /> */}
+      <Home />
+      <Footer />
+    </>
+  );
+}
+
+function NetworksWithLayout() {
+  return (
+    <>
+      {/* <Navbar /> */}
+      <Networks />
+      <Footer />
+    </>
+  );
+}
+
+function AboutWithLayout() {
+  return (
+    <>
+      {/* <Navbar /> */}
+      <About />
+      <Footer />
+    </>
+  );
+}
+
+function DocGuideWithLayout() {
+  return (
+    <>
+      {/* <Navbar /> */}
+      <DocGuide />
+      <Footer />
+    </>
   );
 }
 

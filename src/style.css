@@ -748,3 +748,18 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/*
+Error pages
+*/
+.container-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+.big-text {
+  font-size: 5em; /* Adjust font size as needed */
+  text-align: center;
+}
