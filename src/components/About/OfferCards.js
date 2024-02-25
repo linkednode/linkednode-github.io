@@ -11,12 +11,12 @@ function OfferGroups(props) {
           <Col md="auto" className="tech-icons" >
             {Icon && <Icon />} {/* Render the icon if provided */}
           </Col>
-          <Card.Title style={{ textAlign: "justify" }}>
+          <Card.Title style={{ textAlign: "center" }}>
             {props.title}
             <br/>
             {props.title2}
           </Card.Title>
-          <Card.Text style={{ textAlign: "justify" }}>
+          <Card.Text style={{ textAlign: "center" }}>
             {props.description}
           </Card.Text>
         </Card.Body>

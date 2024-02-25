@@ -62,18 +62,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #0b49d0;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(0, 128, 194, 0.75);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgba(13, 28, 196, 1);
   border-radius: 12px;
 }
 
@@ -538,6 +538,42 @@ button:focus {
   box-shadow: none !important;
 }
 .project-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+}
+
+.logo-section {
+  position: relative !important;
+  padding-top: 50px !important; /* Adjusted padding-top */
+  padding-bottom: 15px !important; /* Adjusted padding-bottom */
+  background-image: var(--section-background-color) !important;
+}
+
+.logo-card {
+  padding-top: 25px !important; /* Adjusted padding-top */
+  padding-bottom: 25px !important; /* Adjusted padding-bottom */
+  padding-left: 15px !important; /* Adjusted padding-left */
+  padding-right: 15px !important; /* Adjusted padding-right */
+  height: auto !important;
+}
+
+.logo-card-view {
+  box-shadow: 0 2px 3px 2px rgba(119, 53, 136, 0.459) !important; /* Adjusted box-shadow */
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+
+.logo-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 2px 3px rgba(129, 72, 144, 0.561) !important; /* Adjusted box-shadow */
+}
+.logo-heading {
   color: white !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;

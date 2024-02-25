@@ -7,8 +7,9 @@ function Type() {
       options={{
         strings: [
           "Trusted validator",
-          "High security",
+          "Secure",
           "24/7 Monitoring",
+          "Transparent",
           "Docs guide"
         ],
         autoStart: true,

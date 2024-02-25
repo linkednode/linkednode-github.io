@@ -50,7 +50,7 @@ function About() {
           <Col md="auto">
             <OfferGroups
               icon={GiPadlock}
-              title="High-security"
+              title="Secure"
               description=""
             />
           </Col>

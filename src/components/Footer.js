@@ -13,11 +13,11 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Developed by <span className="blue"> linkednode. </span>All rights reserved</h3>
+        <Col md="4" className="text-muted">
+          <small>ver 1.1.0</small>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year}</h3>
+          <h3>Copyright © {year}<span className="blue"> linkednode. </span>All rights reserved</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">

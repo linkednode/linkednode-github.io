@@ -46,4 +46,6 @@ You will find all the components used and you can edit your information accordin
 
 ### Show your support
 
+Please give a star or buy me a coffee
+
 

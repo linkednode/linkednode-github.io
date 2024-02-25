@@ -1,11 +1,17 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import NetworksCard from "./NetworksCards";
+import ArchiveCards from "./ArchiveCards";
 // import Particle from "../Particle";
 import entangle from "../../Assets/Networks/entangle.png"
 import artela from "../../Assets/Networks/artela.png"
 import pryzm from "../../Assets/Networks/pryzm.png"
 import nulink from "../../Assets/Networks/nulink.png"
+import dusk from "../../Assets/Networks/dusk.png"
+import stratis from "../../Assets/Networks/stratis.png"
+import crossfi from "../../Assets/Networks/crossfi.png"
+import bevm from "../../Assets/Networks/bevm.png"
+
 import Button from 'react-bootstrap/Button';
 
 function Networks() {
@@ -70,6 +76,36 @@ function Networks() {
           </Col>
           <Col md={4} className="project-card">
             <NetworksCard
+              imgPath={dusk}
+              isHaveExplorer={true}
+              title="Dusk Network"
+              description=""
+              websiteLink="https://dusk.network/news/ITN-set-up/"
+              explorerLink="https://explorer.dusk.network/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <NetworksCard
+              imgPath={crossfi}
+              isHaveExplorer={true}
+              title="Cross Finance"
+              description=""
+              websiteLink="https://crossfi.org/"
+              explorerLink="https://testnet.itrocket.net/crossfi/staking/mxvaloper1ad5hpf5f08kzx84p6ms8j6l9kdaj4p0vy3vdn8"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <NetworksCard
+              imgPath={stratis}
+              isHaveExplorer={true}
+              title="Stratis Auroria Testnet"
+              description=""
+              websiteLink="https://www.stratisplatform.com/2024/02/07/500k-strax-airdrop-staking-quick-start-guide/"
+              explorerLink="https://auroria.beacon.stratisevm.com/validator/b520077ea1d923f9a70851c249c7830dd5181715a669c05b8bbeaa9e1db1c7f228838d9ea1106a0447d9c0f9c29c5faf"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <NetworksCard
               imgPath={nulink}
               isHaveExplorer={false}
               title="Nulink"
@@ -79,6 +115,26 @@ function Networks() {
             />
           </Col>
         </Row>
+      <h2 className="logo-heading">
+        Archive
+      </h2>
+      {/* <div className="d-grid gap-2">
+        <Button variant="secondary" size="lg">
+          N/A
+        </Button>
+      </div> */}
+      <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="logo-card">
+          <ArchiveCards
+            imgPath={bevm}
+            isHaveExplorer={false}
+            title="BEVM"
+            description=""
+            websiteLink=""
+            explorerLink=""
+          />
+        </Col>
+      </Row>
       </Container>
     </Container>
   );
