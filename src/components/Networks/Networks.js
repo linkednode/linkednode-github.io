@@ -10,6 +10,7 @@ import nulink from "../../Assets/Networks/nulink.png"
 import dusk from "../../Assets/Networks/dusk.png"
 import stratis from "../../Assets/Networks/stratis.png"
 import crossfi from "../../Assets/Networks/crossfi.png"
+import selfchain from "../../Assets/Networks/selfchain.jpg"
 import bevm from "../../Assets/Networks/bevm.png"
 
 import Button from 'react-bootstrap/Button';
@@ -46,6 +47,26 @@ function Networks() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <NetworksCard
+              imgPath={crossfi}
+              isHaveExplorer={true}
+              title="Cross Finance"
+              description=""
+              websiteLink="https://crossfi.org"
+              explorerLink="https://testnet.itrocket.net/crossfi/staking/mxvaloper1ad5hpf5f08kzx84p6ms8j6l9kdaj4p0vy3vdn8"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <NetworksCard
+              imgPath={selfchain}
+              isHaveExplorer={true}
+              title="Selfchain"
+              description=""
+              websiteLink="https://selfchain.xyz"
+              explorerLink="https://explorer.nodestake.org/selfchain-testnet/staking/selfvaloper1v7zaq024vaykn8v3cqnyj0v0jjyd34eq95042l"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <NetworksCard
               imgPath={entangle}
               isHaveExplorer={true}
               title="Entangle"
@@ -60,7 +81,7 @@ function Networks() {
               isHaveExplorer={true}
               title="Artela"
               // description="Artela is an extensible blockchain network enabling developers to build feature-rich dApps. Developers can build smart contract in EVM and add WASM native extension at blockchain runtime called Aspect. Artela is fully EVM compatible and built with Cosmos SDK. You can seamlessly deploy your EVM dApps on Artela without any issue. And at the mean time, you can also leverage your dApp with Aspect programming to make it even more powerful."
-              websiteLink="https://artela.network/"
+              websiteLink="https://artela.network"
               explorerLink="https://testnet.itrocket.net/artela/staking/artvaloper127zfj59dsv557zh27juh79kdl8pmw8s9ws4njl"
             />
           </Col>
@@ -70,7 +91,7 @@ function Networks() {
               isHaveExplorer={true}
               title="Pryzm"
               description=""
-              websiteLink="https://pryzm.zone/"
+              websiteLink="https://pryzm.zone"
               explorerLink="https://testnet.itrocket.net/pryzm/staking/pryzmvaloper1rpx9jms35nk7t8rdjgscv49tku6q4nupkc5tje"
             />
           </Col>
@@ -82,16 +103,6 @@ function Networks() {
               description=""
               websiteLink="https://dusk.network/news/ITN-set-up/"
               explorerLink="https://explorer.dusk.network/"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <NetworksCard
-              imgPath={crossfi}
-              isHaveExplorer={true}
-              title="Cross Finance"
-              description=""
-              websiteLink="https://crossfi.org/"
-              explorerLink="https://testnet.itrocket.net/crossfi/staking/mxvaloper1ad5hpf5f08kzx84p6ms8j6l9kdaj4p0vy3vdn8"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -110,7 +121,7 @@ function Networks() {
               isHaveExplorer={false}
               title="Nulink"
               description="Horus2.0 Testnet"
-              websiteLink="https://nulink.org/"
+              websiteLink="https://nulink.org"
               explorerLink=""
             />
           </Col>
