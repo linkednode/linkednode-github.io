@@ -11,6 +11,7 @@ import dusk from "../../Assets/Networks/dusk.png"
 import stratis from "../../Assets/Networks/stratis.png"
 import crossfi from "../../Assets/Networks/crossfi.png"
 import selfchain from "../../Assets/Networks/selfchain.jpg"
+import lava from "../../Assets/Networks/lava.png"
 import bevm from "../../Assets/Networks/bevm.png"
 
 import Button from 'react-bootstrap/Button';
@@ -77,6 +78,16 @@ function Networks() {
           </Col>
           <Col md={4} className="project-card">
             <NetworksCard
+              imgPath={lava}
+              isHaveExplorer={true}
+              title="Lava"
+              description=""
+              websiteLink="https://www.lavanet.xyz"
+              explorerLink="https://testnet.linkednode.xyz/lava/staking/lava@valoper18e5r6pec60lsxmakajsgh7nc8e4tl5lnkup8j5"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <NetworksCard
               imgPath={pryzm}
               isHaveExplorer={true}
               title="Pryzm"
@@ -92,7 +103,7 @@ function Networks() {
               title="Selfchain"
               description=""
               websiteLink="https://selfchain.xyz"
-              explorerLink="https://explorer.linkednode.xyz/selfchain/staking/selfvaloper1v7zaq024vaykn8v3cqnyj0v0jjyd34eq95042l"
+              explorerLink="https://testnet.linkednode.xyz/selfchain/staking/selfvaloper1v7zaq024vaykn8v3cqnyj0v0jjyd34eq95042l"
             />
           </Col>
           <Col md={4} className="project-card">
