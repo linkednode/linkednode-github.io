@@ -47,22 +47,22 @@ function Networks() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <NetworksCard
+              imgPath={artela}
+              isHaveExplorer={true}
+              title="Artela"
+              description=""
+              websiteLink="https://artela.network"
+              explorerLink="https://testnet.linkednode.xyz/artela/staking/artvaloper127zfj59dsv557zh27juh79kdl8pmw8s9ws4njl"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <NetworksCard
               imgPath={crossfi}
               isHaveExplorer={true}
               title="Cross Finance"
               description=""
               websiteLink="https://crossfi.org"
-              explorerLink="https://testnet.itrocket.net/crossfi/staking/mxvaloper1ad5hpf5f08kzx84p6ms8j6l9kdaj4p0vy3vdn8"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <NetworksCard
-              imgPath={selfchain}
-              isHaveExplorer={true}
-              title="Selfchain"
-              description=""
-              websiteLink="https://selfchain.xyz"
-              explorerLink="https://explorer.nodestake.org/selfchain-testnet/staking/selfvaloper1v7zaq024vaykn8v3cqnyj0v0jjyd34eq95042l"
+              explorerLink="https://testnet.linkednode.xyz/crossfi/staking/mxvaloper1ad5hpf5f08kzx84p6ms8j6l9kdaj4p0vy3vdn8"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -70,19 +70,9 @@ function Networks() {
               imgPath={entangle}
               isHaveExplorer={true}
               title="Entangle"
-              // description="Entangle is the first customizable messaging Infrastructure designed to unify web3 and optimize ecosystem liquidity. Entangle provides builders & dApps authenticated, customizable and interoperable data secured on the blockchain with full security configurability."
+              description=""
               websiteLink="https://entangle.fi"
-              explorerLink="https://testnet.itrocket.net/entangle/staking/ethmvaloper1k9zes784hjml8ktdyzussxaqrrvlnec5jsjt4f"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <NetworksCard
-              imgPath={artela}
-              isHaveExplorer={true}
-              title="Artela"
-              // description="Artela is an extensible blockchain network enabling developers to build feature-rich dApps. Developers can build smart contract in EVM and add WASM native extension at blockchain runtime called Aspect. Artela is fully EVM compatible and built with Cosmos SDK. You can seamlessly deploy your EVM dApps on Artela without any issue. And at the mean time, you can also leverage your dApp with Aspect programming to make it even more powerful."
-              websiteLink="https://artela.network"
-              explorerLink="https://testnet.itrocket.net/artela/staking/artvaloper127zfj59dsv557zh27juh79kdl8pmw8s9ws4njl"
+              explorerLink="https://testnet.linkednode.xyz/entangle/staking/ethmvaloper1k9zes784hjml8ktdyzussxaqrrvlnec5jsjt4f"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -92,7 +82,17 @@ function Networks() {
               title="Pryzm"
               description=""
               websiteLink="https://pryzm.zone"
-              explorerLink="https://testnet.itrocket.net/pryzm/staking/pryzmvaloper1rpx9jms35nk7t8rdjgscv49tku6q4nupkc5tje"
+              explorerLink="https://testnet.linkednode.xyz/pryzm/staking/pryzmvaloper1rpx9jms35nk7t8rdjgscv49tku6q4nupkc5tje"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <NetworksCard
+              imgPath={selfchain}
+              isHaveExplorer={true}
+              title="Selfchain"
+              description=""
+              websiteLink="https://selfchain.xyz"
+              explorerLink="https://explorer.linkednode.xyz/selfchain/staking/selfvaloper1v7zaq024vaykn8v3cqnyj0v0jjyd34eq95042l"
             />
           </Col>
           <Col md={4} className="project-card">

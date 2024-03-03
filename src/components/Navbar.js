@@ -92,7 +92,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://ping.pub/"
+                href="https://testnet.linkednode.xyz/"
                 target="_blank"
                 rel="noreferrer"
               >
