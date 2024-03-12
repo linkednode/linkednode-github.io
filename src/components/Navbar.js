@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/linkednode-no-bg-crop.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import {
   AiOutlineHome,
   AiOutlineUser,
@@ -12,7 +13,8 @@ import {
 
 import { CgFileDocument } from "react-icons/cg";
 import { GiChaingun } from "react-icons/gi";
-import { MdOutlineMiscellaneousServices } from "react-icons/md";
+import { MdOutlineMiscellaneousServices,MdHealthAndSafety,MdMonitorHeart } from "react-icons/md";
+import { FaTools } from "react-icons/fa";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -89,16 +91,31 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Guide
               </Nav.Link>
             </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                href="https://testnet.linkednode.xyz/"
+            <NavDropdown title={<span><FaTools style={{ marginRight: '2px' }} /> Tools</span>}>
+              <NavDropdown.Item
+                href="https://testnet.linkednode.xyz"
                 target="_blank"
                 rel="noreferrer"
-              >
-                <GiChaingun style={{ marginBottom: "2px" }} /> Explorer
-              </Nav.Link>
-            </Nav.Item>
+                >
+                  <GiChaingun style={{ marginBottom: "2px" }} /> Explorer
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item
+                href="https://monit.linkednode.xyz"
+                target="_blank"
+                rel="noreferrer"
+                >
+                  <MdMonitorHeart style={{ marginBottom: "2px" }} /> Monitoring
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item
+                href="https://health.linkednode.xyz/status/linkedhealth"
+                target="_blank"
+                rel="noreferrer"
+                >
+                  <MdHealthAndSafety style={{ marginBottom: "2px" }} /> Health
+              </NavDropdown.Item>
+            </NavDropdown>
 
             {/* <Nav.Item className="fork-btn">
               <Button
