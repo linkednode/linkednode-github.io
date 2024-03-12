@@ -60,10 +60,13 @@ function Networks() {
             <NetworksCard
               imgPath={crossfi}
               isHaveExplorer={true}
-              title="Cross Finance"
+              isHaveApiRpc={true}
+              title="CrossFi"
               description=""
               websiteLink="https://crossfi.org"
               explorerLink="https://testnet.linkednode.xyz/crossfi/staking/mxvaloper1ad5hpf5f08kzx84p6ms8j6l9kdaj4p0vy3vdn8"
+              ApiLink="https://api.crossfi.linkednode.xyz"
+              RpcLink="https://rpc.crossfi.linkednode.xyz"
             />
           </Col>
           <Col md={4} className="project-card">
