@@ -40,7 +40,6 @@ function App() {
           <Route path="/" element={<HomeWithLayout />} />
           <Route path="/networks" element={<NetworksWithLayout />} />
           <Route path="/about" element={<AboutWithLayout />} />
-          <Route path="/guide" element={<DocGuideWithLayout />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         {/* <Footer /> */}

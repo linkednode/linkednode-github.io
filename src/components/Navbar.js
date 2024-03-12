@@ -84,9 +84,9 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/guide"
-                onClick={() => updateExpanded(false)}
+                href="https://docs.linkednode.xyz"
+                target="_blank"
+                rel="noreferrer"
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Guide
               </Nav.Link>
