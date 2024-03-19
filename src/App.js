@@ -7,6 +7,7 @@ import Networks from "./components/Networks/Networks";
 import Footer from "./components/Footer";
 import DocGuide from "./components/Guide/Guide";
 import ErrorPage from "./components/Extras/ErrorPage";
+import Loading from "./Loading";
 
 import {
   BrowserRouter as Router,
@@ -20,20 +21,28 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [load, upadateLoad] = useState(true);
+  // const [load, upadateLoad] = useState(true);
 
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     upadateLoad(false);
+  //   }, 1200);
+
+  //   return () => clearTimeout(timer);
+  // }, []);
+
+  const [loading, setLoading] = useState(true)
   useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
+      setTimeout(() => setLoading(false), 3300)
+  }, [])
+  if (loading) {
+      return <Loading/>
+  }
 
   return (
     <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      <Preloader load={loading} />
+      <div className="App" id={loading ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
         <Routes>

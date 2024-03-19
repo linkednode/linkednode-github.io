@@ -27,7 +27,7 @@
 
 ## Getting Started
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+Clone this repository. You will need `node.js` and `git` installed globally on your machine.
 
 ## 🛠 Installation and Setup Instructions
 
@@ -46,6 +46,6 @@ You will find all the components used and you can edit your information accordin
 
 ### Show your support
 
-Please give a star or buy me a coffee
+Please fork this repository if you interested to use this as a template
 
 
