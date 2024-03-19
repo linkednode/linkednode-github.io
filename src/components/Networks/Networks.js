@@ -13,6 +13,7 @@ import crossfi from "../../Assets/Networks/crossfi.png"
 import selfchain from "../../Assets/Networks/selfchain.jpg"
 import lava from "../../Assets/Networks/lava.png"
 import bevm from "../../Assets/Networks/bevm.png"
+import autonity from "../../Assets/Networks/autonity.jpg"
 
 import Button from 'react-bootstrap/Button';
 
@@ -107,6 +108,16 @@ function Networks() {
               description=""
               websiteLink="https://selfchain.xyz"
               explorerLink="https://testnet.linkednode.xyz/selfchain/staking/selfvaloper1v7zaq024vaykn8v3cqnyj0v0jjyd34eq95042l"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <NetworksCard
+              imgPath={autonity}
+              isHaveExplorer={true}
+              title="Autonity"
+              description="Piccadilly Testnet R5"
+              websiteLink="https://game.autonity.org"
+              explorerLink="https://stakeflow.io/autonity-piccadilly/validators/0xc7a7c5314b924d442787888fcdbb0dfbd9123a27"
             />
           </Col>
           <Col md={4} className="project-card">
