@@ -6,8 +6,13 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 function NetworksCards(props) {
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+    <Card className="project-card-view" style={{ height: '400px', width: '300px' }}>
+      <Card.Img 
+        variant="top" 
+        src={props.imgPath} 
+        alt="card-img"
+        style={{ maxWidth: '50%', maxHeight: '200px' ,display: 'block', margin: 'auto'}}
+        />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
