@@ -14,6 +14,7 @@ import selfchain from "../../Assets/Networks/selfchain.jpg"
 import lava from "../../Assets/Networks/lava.png"
 import bevm from "../../Assets/Networks/bevm.png"
 import autonity from "../../Assets/Networks/autonity.jpg"
+import warden from "../../Assets/Networks/warden.jpeg"
 
 import Button from 'react-bootstrap/Button';
 
@@ -108,6 +109,16 @@ function Networks() {
               description=""
               websiteLink="https://selfchain.xyz"
               explorerLink="https://testnet.linkednode.xyz/selfchain/staking/selfvaloper1v7zaq024vaykn8v3cqnyj0v0jjyd34eq95042l"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <NetworksCard
+              imgPath={warden}
+              isHaveExplorer={true}
+              title="Warden"
+              description=""
+              websiteLink="https://wardenprotocol.org"
+              explorerLink="https://testnet.linkednode.xyz/warden/staking/wardenvaloper1g8ggpa8t99qyrzyldvcmmy5p2p44n44el0290r"
             />
           </Col>
           <Col md={4} className="project-card">
