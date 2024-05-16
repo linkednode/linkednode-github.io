@@ -14,7 +14,7 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="text-muted">
-          <small>ver 1.5.0</small>
+          <small>ver 1.5.1</small>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year}<span className="blue"> linkednode. </span>All rights reserved</h3>

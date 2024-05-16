@@ -18,6 +18,7 @@ import warden from "../../Assets/Networks/warden.jpeg"
 import oglabs from "../../Assets/Networks/oglabs.jpg"
 import galactica from "../../Assets/Networks/galactica.jpg"
 import airchains from "../../Assets/Networks/airchains.jpg"
+import initia from "../../Assets/Networks/initia.png"
 
 import Button from 'react-bootstrap/Button';
 
@@ -102,6 +103,16 @@ function Networks() {
               description=""
               websiteLink="https://galactica.com/"
               explorerLink="https://testnet.linkednode.xyz/galactica/staking/galavaloper1psc65ql4pu6j6dhfu2zrzn584djwhthhz80del"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <NetworksCard
+              imgPath={initia}
+              isHaveExplorer={true}
+              title="Initia"
+              description=""
+              websiteLink="https://initia.xyz/"
+              explorerLink="https://scan.testnet.initia.xyz/initiation-1/validators/initvaloper1pcjpgd3ynwkgw2ap7vwsc8zgks2qzeuhtkxaf4"
             />
           </Col>
           <Col md={4} className="project-card">
