@@ -2,42 +2,20 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TestnetCard from "./TestnetCards";
 import MainnetCard from "./MainnetCards";
-import MovingImages from './MovingImages';
-import entangle from "../../Assets/Networks/entangle.png"
 import artela from "../../Assets/Networks/artela.png"
-import pryzm from "../../Assets/Networks/pryzm.png"
-import nulink from "../../Assets/Networks/nulink.png"
-import dusk from "../../Assets/Networks/dusk.png"
-import stratis from "../../Assets/Networks/stratis.png"
 import crossfi from "../../Assets/Networks/crossfi.png"
 import selfchain from "../../Assets/Networks/selfchain.jpg"
-import lava from "../../Assets/Networks/lava.png"
-import bevm from "../../Assets/Networks/bevm.png"
-import autonity from "../../Assets/Networks/autonity.jpg"
 import warden from "../../Assets/Networks/warden.jpeg"
 import oglabs from "../../Assets/Networks/oglabs.jpg"
 import galactica from "../../Assets/Networks/galactica.jpg"
 import airchains from "../../Assets/Networks/airchains.jpg"
-import initia from "../../Assets/Networks/initia.png"
 import blockx from "../../Assets/Networks/blockx.jpg"
 import empeiria from "../../Assets/Networks/empe.jpg"
 import symphony from "../../Assets/Networks/symphony.jpg"
 import arkeo from "../../Assets/Networks/arkeo.jpg"
+import ArchiveCards from "./ArchiveCards";
 
 function Networks() {
-  const delayIncrement = 2; // Delay increment in seconds
-  const images = [
-    { src: autonity, alt: 'Autonity R5', label: 'Autonity R5' },
-    { src: bevm, alt: 'BEVM', label: 'BEVM' },
-    { src: dusk, alt: 'Dusk', label: 'Dusk' },
-    { src: entangle, alt: 'Entangle' , label: 'Entangle'},
-    { src: lava, alt: 'Lava', label: 'Lava' },
-    { src: nulink, alt: 'Nulink', label: 'Nulink' },
-    { src: pryzm, alt: 'Pryzm', label: 'Pryzm' },
-    { src: selfchain, alt: 'Selfchain', label: 'Selfchain' },
-    { src: stratis, alt: 'Stratis', label: 'Stratis' },
-    { src: initia, alt: 'Initia', label: 'Initia' }
-  ];
   return (
     <Container fluid className="project-section">
       {/* <Particle /> */}
@@ -45,9 +23,6 @@ function Networks() {
         <h1 className="project-heading">
           Our <strong className="blue">Networks </strong>
         </h1>
-        {/* <p style={{ color: "white" }}>
-          All of networks here.
-        </p> */}
         <h2 className="project-heading">
           Mainnet
         </h2>
@@ -189,12 +164,9 @@ function Networks() {
       </h2>
       </Container>
       <Row style={{ justifyContent: "center", paddingTop: "30px", paddingBottom: "10px" , paddingLeft: "5px"}}>
-        <Col>
-          <MovingImages images={images} delayIncrement={delayIncrement}/>
+        <Col md={4} className="project-card">
+          <ArchiveCards/>
         </Col>
-        {/* <Col>
-          <addAnimation/>
-        </Col> */}
       </Row>
     </Container>
   );
