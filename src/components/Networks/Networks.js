@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import NetworksCard from "./NetworksCards";
-import ArchiveCards from "./ArchiveCards";
-// import Particle from "../Particle";
+import TestnetCard from "./TestnetCards";
+import MainnetCard from "./MainnetCards";
+import MovingImages from './MovingImages';
 import entangle from "../../Assets/Networks/entangle.png"
 import artela from "../../Assets/Networks/artela.png"
 import pryzm from "../../Assets/Networks/pryzm.png"
@@ -19,10 +19,25 @@ import oglabs from "../../Assets/Networks/oglabs.jpg"
 import galactica from "../../Assets/Networks/galactica.jpg"
 import airchains from "../../Assets/Networks/airchains.jpg"
 import initia from "../../Assets/Networks/initia.png"
-
-import Button from 'react-bootstrap/Button';
+import blockx from "../../Assets/Networks/blockx.jpg"
+import empeiria from "../../Assets/Networks/empe.jpg"
+import symphony from "../../Assets/Networks/symphony.jpg"
+import arkeo from "../../Assets/Networks/arkeo.jpg"
 
 function Networks() {
+  const delayIncrement = 2; // Delay increment in seconds
+  const images = [
+    { src: autonity, alt: 'Autonity R5', label: 'Autonity R5' },
+    { src: bevm, alt: 'BEVM', label: 'BEVM' },
+    { src: dusk, alt: 'Dusk', label: 'Dusk' },
+    { src: entangle, alt: 'Entangle' , label: 'Entangle'},
+    { src: lava, alt: 'Lava', label: 'Lava' },
+    { src: nulink, alt: 'Nulink', label: 'Nulink' },
+    { src: pryzm, alt: 'Pryzm', label: 'Pryzm' },
+    { src: selfchain, alt: 'Selfchain', label: 'Selfchain' },
+    { src: stratis, alt: 'Stratis', label: 'Stratis' },
+    { src: initia, alt: 'Initia', label: 'Initia' }
+  ];
   return (
     <Container fluid className="project-section">
       {/* <Particle /> */}
@@ -36,24 +51,47 @@ function Networks() {
         <h2 className="project-heading">
           Mainnet
         </h2>
-        <div className="d-grid gap-2">
-          <Button variant="secondary" size="lg">
-            COMING SOON
-          </Button>
-        </div>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <MainnetCard
+              imgPath={blockx}
+              isHaveExplorer={true}
+              isHaveApiRpc={false}
+              title="Blockx"
+              description=""
+              websiteLink="https://www.blockxnet.com"
+              explorerLink="https://mainnet.linkednode.xyz/blockx/staking/blockxvaloper1gnp93ssekvr5psajzzgplalurycfs6p0hjs0r7"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <MainnetCard
+              imgPath={crossfi}
+              isHaveExplorer={true}
+              isHaveApiRpc={false}
+              title="CrossFi"
+              description=""
+              websiteLink="https://crossfi.org"
+              explorerLink="https://xfiscan.com/validators/mxvaloper1qv29xct293fn0qgx2phpm85rnkhwqfc52hlnyc"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <MainnetCard
+              imgPath={selfchain}
+              isHaveExplorer={true}
+              isHaveApiRpc={false}
+              title="Selfchain"
+              description=""
+              websiteLink="https://selfchain.xyz"
+              explorerLink="https://staking.selfchain.xyz/"
+            />
+          </Col>
         </Row>
         <h2 className="project-heading">
           Testnet
         </h2>
-        <div className="d-grid gap-2">
-          {/* <Button variant="secondary" size="lg">
-            On going
-          </Button> */}
-        </div>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
-            <NetworksCard
+            <TestnetCard
               imgPath={oglabs}
               isHaveExplorer={true}
               title="0glabs"
@@ -63,7 +101,17 @@ function Networks() {
             />
           </Col>
           <Col md={4} className="project-card">
-            <NetworksCard
+            <TestnetCard
+              imgPath={arkeo}
+              isHaveExplorer={true}
+              title="Arkeo"
+              description=""
+              websiteLink="https://www.arkeo.network"
+              explorerLink="https://testnet.linkednode.xyz/arkeo/staking/tarkeovaloper17fvkwr369stgd92746udazfjsvwrqdge0vg73v"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <TestnetCard
               imgPath={airchains}
               isHaveExplorer={true}
               title="Airchains"
@@ -73,7 +121,7 @@ function Networks() {
             />
           </Col>
           <Col md={4} className="project-card">
-            <NetworksCard
+            <TestnetCard
               imgPath={artela}
               isHaveExplorer={true}
               title="Artela"
@@ -83,7 +131,7 @@ function Networks() {
             />
           </Col>
           <Col md={4} className="project-card">
-            <NetworksCard
+            <TestnetCard
               imgPath={crossfi}
               isHaveExplorer={true}
               isHaveApiRpc={true}
@@ -91,12 +139,21 @@ function Networks() {
               description=""
               websiteLink="https://crossfi.org"
               explorerLink="https://testnet.linkednode.xyz/crossfi/staking/mxvaloper1ad5hpf5f08kzx84p6ms8j6l9kdaj4p0vy3vdn8"
-              ApiLink="https://api.crossfi.linkednode.xyz"
-              RpcLink="https://rpc.crossfi.linkednode.xyz"
             />
           </Col>
           <Col md={4} className="project-card">
-            <NetworksCard
+            <TestnetCard
+              imgPath={empeiria}
+              isHaveExplorer={true}
+              isHaveApiRpc={true}
+              title="Empeiria"
+              description=""
+              websiteLink="https://empe.io"
+              explorerLink="https://explorer-testnet.empe.io/validators/empevaloper1kwpw2jqvzl272catndx6xea6fnnqf64565qe7d"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <TestnetCard
               imgPath={galactica}
               isHaveExplorer={true}
               title="Galactica"
@@ -106,17 +163,18 @@ function Networks() {
             />
           </Col>
           <Col md={4} className="project-card">
-            <NetworksCard
-              imgPath={initia}
+            <TestnetCard
+              imgPath={symphony}
               isHaveExplorer={true}
-              title="Initia"
+              isHaveApiRpc={true}
+              title="Symphony"
               description=""
-              websiteLink="https://initia.xyz/"
-              explorerLink="https://scan.testnet.initia.xyz/initiation-1/validators/initvaloper1pcjpgd3ynwkgw2ap7vwsc8zgks2qzeuhtkxaf4"
+              websiteLink="https://orchestralabs.org"
+              explorerLink="https://testnet.linkednode.xyz/symphony/staking/symphonyvaloper10khujjn6jdvlg6nqu3kl3jj0jqgkpxrxt5ezen"
             />
           </Col>
           <Col md={4} className="project-card">
-            <NetworksCard
+            <TestnetCard
               imgPath={warden}
               isHaveExplorer={true}
               title="Warden"
@@ -125,108 +183,19 @@ function Networks() {
               explorerLink="https://testnet.linkednode.xyz/warden/staking/wardenvaloper1g8ggpa8t99qyrzyldvcmmy5p2p44n44el0290r"
             />
           </Col>
-          <Col md={4} className="project-card">
-            <NetworksCard
-              imgPath={dusk}
-              isHaveExplorer={true}
-              title="Dusk Network"
-              description=""
-              websiteLink="https://dusk.network/news/ITN-set-up/"
-              explorerLink="https://explorer.dusk.network/"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <NetworksCard
-              imgPath={stratis}
-              isHaveExplorer={true}
-              title="Stratis Auroria Testnet"
-              description=""
-              websiteLink="https://www.stratisplatform.com/2024/02/07/500k-strax-airdrop-staking-quick-start-guide/"
-              explorerLink="https://auroria.beacon.stratisevm.com/validator/b520077ea1d923f9a70851c249c7830dd5181715a669c05b8bbeaa9e1db1c7f228838d9ea1106a0447d9c0f9c29c5faf"
-            />
-          </Col>
         </Row>
       <h2 className="logo-heading">
         Archive
       </h2>
-      {/* <div className="d-grid gap-2">
-        <Button variant="secondary" size="lg">
-        N/A
-        </Button>
-      </div> */}
-      <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="logo-card">
-          <ArchiveCards
-            imgPath={bevm}
-            isHaveExplorer={false}
-            title="BEVM"
-            description=""
-            websiteLink=""
-            explorerLink=""
-          />
-        </Col>
-        <Col md={4} className="project-card">
-          <NetworksCard
-            imgPath={nulink}
-            isHaveExplorer={false}
-            title="Nulink"
-            description="Horus2.0 Testnet"
-            websiteLink="https://nulink.org"
-            explorerLink=""
-          />
-        </Col>
-        <Col md={4} className="project-card">
-          <NetworksCard
-            imgPath={entangle}
-            isHaveExplorer={true}
-            title="Entangle"
-            description=""
-            // websiteLink="https://entangle.fi"
-            // explorerLink="https://testnet.linkednode.xyz/entangle/staking/ethmvaloper1k9zes784hjml8ktdyzussxaqrrvlnec5jsjt4f"
-          />
-        </Col>
-        <Col md={4} className="project-card">
-          <NetworksCard
-            imgPath={lava}
-            isHaveExplorer={true}
-            title="Lava"
-            description=""
-            // websiteLink="https://www.lavanet.xyz"
-            // explorerLink="https://testnet.linkednode.xyz/lava/staking/lava@valoper18e5r6pec60lsxmakajsgh7nc8e4tl5lnkup8j5"
-          />
-        </Col>
-        <Col md={4} className="project-card">
-          <NetworksCard
-            imgPath={pryzm}
-            isHaveExplorer={true}
-            title="Pryzm"
-            description=""
-            // websiteLink="https://pryzm.zone"
-            // explorerLink="https://testnet.linkednode.xyz/pryzm/staking/pryzmvaloper1rpx9jms35nk7t8rdjgscv49tku6q4nupkc5tje"
-          />
-        </Col>
-        <Col md={4} className="project-card">
-          <NetworksCard
-            imgPath={selfchain}
-            isHaveExplorer={true}
-            title="Selfchain"
-            description=""
-            // websiteLink="https://selfchain.xyz"
-            // explorerLink="https://testnet.linkednode.xyz/selfchain/staking/selfvaloper1v7zaq024vaykn8v3cqnyj0v0jjyd34eq95042l"
-          />
-        </Col>
-        <Col md={4} className="project-card">
-          <NetworksCard
-            imgPath={autonity}
-            isHaveExplorer={true}
-            title="Autonity"
-            description="Piccadilly Testnet R5"
-            // websiteLink="https://game.autonity.org"
-            // explorerLink="https://stakeflow.io/autonity-piccadilly/validators/0xc7a7c5314b924d442787888fcdbb0dfbd9123a27"
-          />
-        </Col>
-      </Row>
       </Container>
+      <Row style={{ justifyContent: "center", paddingTop: "30px", paddingBottom: "10px" , paddingLeft: "5px"}}>
+        <Col>
+          <MovingImages images={images} delayIncrement={delayIncrement}/>
+        </Col>
+        {/* <Col>
+          <addAnimation/>
+        </Col> */}
+      </Row>
     </Container>
   );
 }

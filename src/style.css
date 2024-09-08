@@ -580,6 +580,35 @@ button:focus {
   padding-top: 10px !important;
 }
 
+.image-container {
+  position: relative;
+  width: 100%; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  overflow: hidden; /* Hide images outside the container */
+}
+
+.moving-image {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  transform: translateY(-50%);
+  animation: moveRight 18s linear infinite;
+}
+
+.label {
+  color: white !important;
+  font-size: 14px !important;
+  text-align: center;
+}
+
+@keyframes moveRight {
+  0% {
+    left: -100px; /* Start position (left off-screen) */
+  }
+  100% {
+    left: 100%; /* End position (right off-screen) */
+  }
+}
+
 /* --------- */
 /* About */
 /* --------- */

@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import { GiChaingun } from "react-icons/gi";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-function NetworksCards(props) {
+function MainnetCards(props) {
   return (
     <Card className="project-card-view" style={{ height: '400px', width: '300px' }}>
       <Card.Img 
@@ -24,9 +24,6 @@ function NetworksCards(props) {
         </Button>
         {"\n"}
         {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
         {props.isHaveExplorer && props.explorerLink && (
           <Button
             variant="primary"
@@ -35,35 +32,11 @@ function NetworksCards(props) {
             style={{ marginLeft: "10px" }}
           >
             <GiChaingun /> &nbsp;
-            {"Explorer"}
+            {"Stake Us"}
           </Button>
         )}
-        <br></br>
-        <br></br>
-        <div>
-        {props.isHaveApiRpc && props.ApiLink && (
-          <Button
-            variant="primary"
-            href={props.ApiLink}
-            target="_blank"
-            style={{ marginLeft: "2px" }}
-          >
-            {"API"}
-          </Button>
-        )}
-        {props.isHaveApiRpc && props.RpcLink && (
-          <Button
-            variant="primary"
-            href={props.RpcLink}
-            target="_blank"
-            style={{ marginLeft: "2px" }}
-          >
-            {"RPC"}
-          </Button>
-        )}
-        </div>
       </Card.Body>
     </Card>
   );
 }
-export default NetworksCards;
+export default MainnetCards;

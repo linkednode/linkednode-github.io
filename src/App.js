@@ -5,15 +5,13 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Networks from "./components/Networks/Networks";
 import Footer from "./components/Footer";
-import DocGuide from "./components/Guide/Guide";
 import ErrorPage from "./components/Extras/ErrorPage";
 import Loading from "./Loading";
 
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  Navigate
+  Routes
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
@@ -33,7 +31,7 @@ function App() {
 
   const [loading, setLoading] = useState(true)
   useEffect(() => {
-      setTimeout(() => setLoading(false), 3300)
+      setTimeout(() => setLoading(false), 2000)
   }, [])
   if (loading) {
       return <Loading/>
@@ -92,16 +90,6 @@ function AboutWithLayout() {
     <>
       {/* <Navbar /> */}
       <About />
-      <Footer />
-    </>
-  );
-}
-
-function DocGuideWithLayout() {
-  return (
-    <>
-      {/* <Navbar /> */}
-      <DocGuide />
       <Footer />
     </>
   );

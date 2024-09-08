@@ -3,9 +3,11 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/linkednode-no-bg-crop.png";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Dropdown from 'react-bootstrap/Dropdown';
+import SplitButton from 'react-bootstrap/SplitButton';
+
 import {
   AiOutlineHome,
   AiOutlineUser,
@@ -85,7 +87,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 href="https://docs.linkednode.xyz"
-                target="_blank"
+                // target="_blank"
                 rel="noreferrer"
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Guide
@@ -93,28 +95,39 @@ function NavBar() {
             </Nav.Item>
             <NavDropdown title={<span><FaTools style={{ marginRight: '2px' }} /> Tools</span>}>
               <NavDropdown.Item
-                href="https://testnet.linkednode.xyz"
-                target="_blank"
-                rel="noreferrer"
-                >
-                  <GiChaingun style={{ marginBottom: "2px" }} /> Explorer
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item
                 href="https://monit.linkednode.xyz"
                 target="_blank"
                 rel="noreferrer"
                 >
                   <MdMonitorHeart style={{ marginBottom: "2px" }} /> Monitoring
               </NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item
-                href="https://health.linkednode.xyz/status/linkedhealth"
+                href="https://health.linkednode.xyz/status/dashboard"
                 target="_blank"
                 rel="noreferrer"
                 >
                   <MdHealthAndSafety style={{ marginBottom: "2px" }} /> Health
               </NavDropdown.Item>
+              <SplitButton
+                key='end'
+                drop='end'
+                variant='secondary'
+                title={
+                  <>
+                    <GiChaingun style={{ marginBottom: "2px", marginRight: "5px" }} />
+                    Explorer
+                  </>
+                }
+                >
+                <Dropdown.Item
+                href="https://mainnet.linkednode.xyz"
+                target="_blank"
+                rel="noreferrer">Mainnet</Dropdown.Item>
+                <Dropdown.Item
+                href="https://testnet.linkednode.xyz"
+                target="_blank"
+                rel="noreferrer">Testnet</Dropdown.Item>
+              </SplitButton>
             </NavDropdown>
 
             {/* <Nav.Item className="fork-btn">
