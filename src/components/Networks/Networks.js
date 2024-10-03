@@ -82,7 +82,7 @@ function Networks() {
               title="Arkeo"
               description=""
               websiteLink="https://www.arkeo.network"
-              explorerLink="https://testnet.linkednode.xyz/arkeo/staking/tarkeovaloper17fvkwr369stgd92746udazfjsvwrqdge0vg73v"
+              explorerLink="https://testnet.arkeo.explorers.guru/validator/tarkeovaloper17fvkwr369stgd92746udazfjsvwrqdge0vg73v"
             />
           </Col>
           <Col md={4} className="project-card">
