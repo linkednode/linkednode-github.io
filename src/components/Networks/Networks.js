@@ -46,7 +46,7 @@ function Networks() {
               title="CrossFi"
               description=""
               websiteLink="https://crossfi.org"
-              explorerLink="https://xfiscan.com/validators/mxvaloper1qv29xct293fn0qgx2phpm85rnkhwqfc52hlnyc"
+              explorerLink="https://xfiscan.com/validator/mxvaloper1qv29xct293fn0qgx2phpm85rnkhwqfc52hlnyc"
             />
           </Col>
           <Col md={4} className="project-card">
